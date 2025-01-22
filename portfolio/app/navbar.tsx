@@ -1,6 +1,6 @@
 export default function Navbar() {
     return (
-      <div className="navbar bg-[#083344] rounded-full px-2 w-fit mx-auto mt-4 fixed top-0 left-1/2 transform -translate-x-1/2">
+      <div className="navbar backdrop-blur-sm z-10 bg-[#083344]/70 rounded-full px-2 w-fit mx-auto mt-4 fixed top-0 left-1/2 transform -translate-x-1/2">
         <ul className="flex px-1 gap-8">
           <li>
             <a className="bg-[#0C5769] text-white rounded-full px-6 py-3">Home</a>
