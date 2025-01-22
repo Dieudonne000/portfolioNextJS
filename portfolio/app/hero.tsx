@@ -13,7 +13,8 @@ const Hero = () => {
       <p className="py-6">
         I'd be happy to work with you
       </p>
-      {/* <button className="btn btn-primary">Get Started</button> */}
+          {/* <button className="btn btn-primary">Get Started</button> */}
+          {/* <FontAwesomeIcon icon="fa-solid fa-angles-down" bounce /> */}
     </div>
   </div>
 </div>

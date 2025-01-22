@@ -33,5 +33,8 @@
 body {
   color: white;
   background: var(--background);
+}
+
+h1{
   font-family: 'Acorn','sans-serif';
 }

@@ -12,7 +12,7 @@ const AboutMe = () => {
           alt="moi"
           className="max-w-[15rem] rounded-lg shadow-2xl" />
         <div>
-          <h1 className="text-5xl font-bold">About me</h1>
+          <h2 className="text-5xl font-bold">About me</h2>
           <p className="py-6 max-w-[50rem]">
             I'm Dieudonne, a frontend designer passionate about creating clean, user-friendly interfaces.<br></br>
             My main focus is on crafting responsive and visually appealing web experiences.<br></br>

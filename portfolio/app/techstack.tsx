@@ -45,11 +45,12 @@ const TechStack = () => {
         <div className="bg-[#01566F] p-20 rounded-3xl shadow-lg max-w-6xl w-full mx-4">
                 <h2 className="text-center text-3xl font-bold text-white mb-6">Tech Stack</h2>
                 <div className="flex justify-center">
-          <div className="tabs tabs-boxed justify-center mb-6 rounded-2xl max-w-[30rem] p-2 bg-white !text-teal-600">
+          <div className="tabs tabs-boxed justify-center mb-6 rounded-2xl max-w-[30rem] p-2 bg-white text-red-600">
             {["Frontend", "Backend", "Others", "Mobile"].map((tab) => (
               <button
                 key={tab}
-                className={`tab ${activeTab === tab ? "tab-active bg-[#01566F]" : ""}`}
+                className={`tab ${activeTab === tab ? " rounded-full bg-[#01566F] text-white"
+          : "text-[#01566f]"}`}
                 onClick={() => setActiveTab(tab)}
               >
                 {tab}
