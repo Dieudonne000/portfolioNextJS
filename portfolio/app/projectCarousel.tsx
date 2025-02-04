@@ -13,7 +13,7 @@ const projects = [
   {
     title: "Fishot",
     image: "/fishot.jpg",
-    description: "Fishot is a fish robot that cleans water by removing plastic using AI and sensors. It finds and collects plastic while protecting marine life. It operates autonomously and reports pollution levels for cleaner waters.",
+    description: "Fishot is a fish robot that cleans water by removing plastic using AI and sensors. It finds and collects plastic while protecting marine life.",
   },
   {
     title: "Intellix",
@@ -29,7 +29,7 @@ const projects = [
 
 const ProjectsCarousel = () => {
   return (
-    <div className="text-white py-12 px-6">
+    <div className="text-white py-2 sm:py-12 px-0 sm:px-6">
       <h2 className="text-center text-3xl font-bold mb-8 text-[#01566F] dark:text-white">Projects</h2>
       <Swiper
         spaceBetween={10}
@@ -56,7 +56,7 @@ const ProjectsCarousel = () => {
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-gray-100 text-sm">{project.description}</p>
               </div>
-              <button className="btn btn-disabled absolute bottom-4 right-4">
+              <button className="btn z-10 absolute sm:bottom-4 bottom-6 right-4">
                   <FaEye />
                   view project
                 </button>

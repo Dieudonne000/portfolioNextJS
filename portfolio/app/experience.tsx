@@ -85,7 +85,7 @@ const Experience = () => {
   
     return (
       <div className="flex justify-center items-center min-h-screen overflow-auto">
-        <div className="bg-white dark:bg-[#01566F] p-20 rounded-3xl shadow-lg max-w-6xl w-full mx-4">
+        <div className="bg-white dark:bg-[#01566F] p-10 sm:p-20 rounded-3xl shadow-lg max-w-6xl w-full mx-4">
                 <h2 className="text-center text-3xl font-bold text-[#01566F] dark:text-white mb-6">Experience & Education</h2>
                 <div className="flex justify-center">
           <div className="tabs gap-4 tabs-boxed justify-center mb-6 rounded-2xl max-w-[30rem] p-2 bg-[#01566F] dark:bg-white">

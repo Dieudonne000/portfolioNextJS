@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Portfolio | MUNEZA Jean Dieudonne",
   description: "Web title",
+  icons: {
+    icon: "/Group 1 (1).svg",
+  },
 };
 
 export default function RootLayout({

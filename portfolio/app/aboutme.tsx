@@ -4,16 +4,16 @@ import React from 'react'
 
 const AboutMe = () => {
   return (
-<div className="hero min-h-screen">
-  <div className="rounded-3xl p-20 bg-[#FFF] dark:bg-[#075066]">
-      <div className="hero-content flex-col lg:flex-row">
+<div className="hero min-h-screen ">
+  <div className="rounded-3xl p-7 sm:p-20 bg-[#FFF] dark:bg-[#075066]">
+      <div className="hero-content sm:max-w-[80rem] max-w-[20rem] flex-col lg:flex-row">
         <img
           src="/Moi.jpg"
           alt="moi"
-          className="max-w-[15rem] rounded-lg shadow-2xl" />
+          className="max-w-[9rem] sm:max-w-[15rem] rounded-lg shadow-2xl" />
         <div>
-          <h2 className="text-5xl font-bold transition-all duration-700 text-[#075066] dark:text-white">About me</h2>
-          <p className="py-6 max-w-[50rem] text-[#075066] transition-all duration-700 dark:text-white">
+          <h2 className="text-3xl sm:text-5xl font-bold transition-all duration-700 text-[#075066] dark:text-white">About me</h2>
+          <p className="text-sm sm:text-base py-4 sm:py-6 sm:max-w-[50rem] text-[#075066] transition-all duration-700 dark:text-white">
             I'm Dieudonne, a frontend designer passionate about creating clean, user-friendly interfaces.<br></br>
             My main focus is on crafting responsive and visually appealing web experiences.<br></br>
             While my expertise lies in frontend development,<br></br>

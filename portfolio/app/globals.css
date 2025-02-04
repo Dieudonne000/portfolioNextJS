@@ -56,6 +56,6 @@ body {
   transition: background 0.7s ease, color 0.7s ease;
 }
 
-h1,.wel{
+h1,.wel,.ftText{
   font-family: 'Acorn','sans-serif';
 }

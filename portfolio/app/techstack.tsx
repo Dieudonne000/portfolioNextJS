@@ -100,11 +100,11 @@ const TechStack = () => {
       };
   
     return (
-      <div className="flex justify-center items-center min-h-screen ">
-        <div className="bg-[#ffffff] dark:bg-[#01566F] p-20 rounded-3xl shadow-lg max-w-6xl w-full mx-4 h-[30rem]">
+      <div className="flex justify-center items-center min-h-dvh sm:min-h-screen ">
+        <div className="bg-[#ffffff] dark:bg-[#01566F] sm:max-w-[74rem] max-w-[24rem] p-10 sm:p-20 rounded-3xl shadow-lg max-w-6xl w-full mx-4 h-[30rem]">
                 <h2 className="text-center text-3xl text-[#01566F] font-bold dark:text-white mb-6">Tech Stack</h2>
                 <div className="flex justify-center">
-          <div className="tabs gap-4 tabs-boxed justify-center mb-6 rounded-2xl max-w-[30rem] p-2 bg-[#01566F] dark:bg-white">
+          <div className="tabs gap-1 sm:gap-4 tabs-boxed justify-center mb-6 rounded-2xl max-w-[30rem] p-1 sm:p-2 bg-[#01566F] dark:bg-white">
             {["Frontend", "Backend", "Others", "Mobile"].map((tab) => (
               <button
                 key={tab}
@@ -117,7 +117,7 @@ const TechStack = () => {
             ))}
                     </div>
                     </div>
-          <div className="p-6 rounded-lg">{renderContent()}</div>
+          <div className="p-4 sm:p-6 rounded-lg">{renderContent()}</div>
         </div>
       </div>
     );
