@@ -29,7 +29,7 @@ const Hero = () => {
 
       <div className="hero-content text-center">
         <div className="max-w-max">
-          <h1 className="text-8xl font-bold">
+          <h1 className="text-8xl font-bold transition-all duration-700 text-[#01566F] dark:text-[#fff]">
             Hi. I’m Dieudonne.<br />
             <ReactTyped
               className="text-[#31b0ff]"
@@ -39,7 +39,7 @@ const Hero = () => {
               loop // Loops the typing animation
             />
           </h1>
-          <p className="py-6 text-xl wel">Let’s Build Something Amazing Together</p>
+          <p className="py-6 text-xl text-[#01566F] dark:text-[#fff] wel">Let’s Build Something Amazing Together</p>
         </div>
       </div>
     </div>

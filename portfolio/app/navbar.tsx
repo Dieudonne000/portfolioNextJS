@@ -10,8 +10,8 @@ export default function Navbar() {
   // Navigation sections and their corresponding IDs
   const sections = [
     { name: 'Home', id: 'hero' },
-    { name: 'About Me', id: 'aboutme' },
-    { name: 'Techstack', id: 'techstack' },
+    { name: 'About', id: 'aboutme' },
+    // { name: 'Techstack', id: 'techstack' },
     { name: 'Project', id: 'project' },
     { name: 'Experience', id: 'experience' },
     { name: 'Contact', id: 'contact' },
@@ -53,7 +53,7 @@ export default function Navbar() {
                 offset={-70} // Adjust for fixed navbar height
                 className={`${
                   activeLink === name ? 'bg-[#0C5769]' : ''
-                } text-white font-semibold hover:text-[#23a6c7] cursor-pointer rounded-full px-5 py-3 transition-colors duration-700`}
+                } text-white m-0 font-semibold hover:text-[#23a6c7] text-sm cursor-pointer rounded-full px-4 py-2 transition-colors duration-700`}
                 onClick={() => setActiveLink(name)}
               >
                 {name}

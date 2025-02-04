@@ -30,7 +30,7 @@ const projects = [
 const ProjectsCarousel = () => {
   return (
     <div className="text-white py-12 px-6">
-      <h2 className="text-center text-3xl font-bold mb-8">Projects</h2>
+      <h2 className="text-center text-3xl font-bold mb-8 text-[#01566F] dark:text-white">Projects</h2>
       <Swiper
         spaceBetween={10}
         slidesPerView={1}

@@ -11,7 +11,7 @@ const Experience = () => {
         switch (activeTab) {
             case "Experience":
                 return (
-                    <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                    <ul className="timeline timeline-snap-icon text-[#01566F] dark:text-white max-md:timeline-compact timeline-vertical">
                         <li>
                             <div className="timeline-middle">
                             <IoCheckmarkCircle />
@@ -50,7 +50,7 @@ const Experience = () => {
                 )
           case "Education":
             return (
-                <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                <ul className="timeline timeline-snap-icon text-[#01566F] dark:text-white max-md:timeline-compact timeline-vertical">
                 <li>
                     <div className="timeline-middle">
                     <IoCheckmarkCircle />
@@ -85,15 +85,15 @@ const Experience = () => {
   
     return (
       <div className="flex justify-center items-center min-h-screen overflow-auto">
-        <div className="bg-[#01566F] p-20 rounded-3xl shadow-lg max-w-6xl w-full mx-4">
-                <h2 className="text-center text-3xl font-bold text-white mb-6">Experience & Education</h2>
+        <div className="bg-white dark:bg-[#01566F] p-20 rounded-3xl shadow-lg max-w-6xl w-full mx-4">
+                <h2 className="text-center text-3xl font-bold text-[#01566F] dark:text-white mb-6">Experience & Education</h2>
                 <div className="flex justify-center">
-          <div className="tabs gap-4 tabs-boxed justify-center mb-6 rounded-2xl max-w-[30rem] p-2 bg-white">
+          <div className="tabs gap-4 tabs-boxed justify-center mb-6 rounded-2xl max-w-[30rem] p-2 bg-[#01566F] dark:bg-white">
             {["Experience", "Education"].map((tab) => (
               <button
                 key={tab}
-                className={`tab transition-all duration-500 font-semibold ${activeTab === tab ? " rounded-full bg-[#01566F] text-white"
-          : "text-[#01566f]"}`}
+                className={`tab transition-all duration-500 font-semibold ${activeTab === tab ? " rounded-full text-[#01566F] bg-white dark:bg-[#01566F] dark:text-white"
+          : "text-white dark:text-[#01566f]"}`}
                 onClick={() => setActiveTab(tab)}
               >
                 {tab}
