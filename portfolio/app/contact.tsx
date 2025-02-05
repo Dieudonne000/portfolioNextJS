@@ -52,7 +52,7 @@ const Contact = () => {
             <div className="card bg-white text-[#01566F] dark:text-white dark:bg-[#031a20] w-full max-w-sm shrink-0 shadow-2xl">
               <form ref={formRef} onSubmit={sendEmail} className="card-body">
                 <div className="text-[#183037] dark:text-white">
-                  <h2 className='text-2xl font-bold mb-5'>I'm always open</h2>
+                  <h2 className='text-2xl font-bold mb-5'>I&apos;m always open</h2>
                   <p className='text-sm mb-4'>Feel free to reach out—drop a message, and I&apos;ll get back to you as soon as possible!</p>
                 </div>
                 <div className="form-control">
