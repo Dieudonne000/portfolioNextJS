@@ -29,7 +29,7 @@ const Hero = () => {
 
       <div className="hero-content text-center">
         <div className="max-w-max">
-          <h1 className="text-2xl sm:text-8xl font-bold transition-all duration-700 text-[#01566F] dark:text-[#fff]">
+          <h1 className="text-2xl md::text-6xl sm:text-8xl font-bold transition-all duration-700 text-[#01566F] dark:text-[#fff]">
             Hi. I’m Dieudonne.<br />
             <ReactTyped
               className="text-[#31b0ff]"

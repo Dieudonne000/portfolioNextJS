@@ -46,17 +46,17 @@ const ProjectsCarousel = () => {
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index} className="flex justify-center">
-            <div className="bg-[#01566F] rounded-lg shadow-lg overflow-auto max-w-sm h-[26rem] relative">
+            <div className="bg-slate-50 dark:bg-[#01566F] rounded-lg shadow-lg overflow-auto max-w-sm h-[26rem] relative">
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-100 text-sm">{project.description}</p>
+                <h3 className="text-[#01566F] dark:text-white text-xl font-bold mb-2">{project.title}</h3>
+                <p className="text-[#072f3b] dark:text-gray-100">{project.description}</p>
               </div>
-              <button className="btn z-10 absolute sm:bottom-4 bottom-6 right-4">
+              <button className="btn z-10 absolute bg-[#0c92c3] border-0 hover:bg-[#01566F] text-white sm:bottom-4 bottom-6 right-4">
                   <FaEye />
                   view project
                 </button>
