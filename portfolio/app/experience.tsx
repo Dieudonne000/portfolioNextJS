@@ -2,7 +2,8 @@
 'use client'
 import React from 'react'
 import { useState } from 'react';
-import { IoCheckmarkCircle } from 'react-icons/io5';
+import { GiBriefcase } from 'react-icons/gi';
+import { HiAcademicCap } from 'react-icons/hi';
 
 const Experience = () => {
     const [activeTab, setActiveTab] = useState("Experience");
@@ -14,7 +15,7 @@ const Experience = () => {
                     <ul className="timeline timeline-snap-icon text-[#01566F] dark:text-white max-md:timeline-compact timeline-vertical">
                         <li>
                             <div className="timeline-middle">
-                            <IoCheckmarkCircle />
+                            <GiBriefcase />
                             </div>
                             <div className="timeline-start mb-10 md:text-end">
                             <time className="font-mono italic">2023 up to now</time>
@@ -26,7 +27,7 @@ const Experience = () => {
                         <li>
                             <hr />
                             <div className="timeline-middle">
-                            <IoCheckmarkCircle />
+                            <GiBriefcase />
                             </div>
                             <div className="timeline-end md:mb-10">
                             <time className="font-mono italic">2025</time>
@@ -38,7 +39,7 @@ const Experience = () => {
                         <li>
                             <hr />
                             <div className="timeline-middle">
-                            <IoCheckmarkCircle />
+                            <GiBriefcase />
                             </div>
                             <div className="timeline-start mb-10 md:text-end">
                             <time className="font-mono italic">2025</time>
@@ -53,7 +54,7 @@ const Experience = () => {
                 <ul className="timeline timeline-snap-icon text-[#01566F] dark:text-white max-md:timeline-compact timeline-vertical">
                 <li>
                     <div className="timeline-middle">
-                    <IoCheckmarkCircle />
+                    <HiAcademicCap />
                     </div>
                     <div className="timeline-start mb-10 md:text-end">
                     <time className="font-mono italic">2020-2023</time>
@@ -66,7 +67,7 @@ const Experience = () => {
                 <li>
                     <hr />
                     <div className="timeline-middle">
-                    <IoCheckmarkCircle />
+                    <HiAcademicCap />
                     </div>
                     <div className="timeline-end md:mb-10">
                     <time className="font-mono italic">2023-now</time>

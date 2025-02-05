@@ -20,7 +20,11 @@ const AboutMe = () => {
             I also work on backend projects, ensuring seamless integration and functionality.<br></br>
             I'm always excited to take on new challenges and continue growing in the world of web development.<br></br>
           </p>
-          <button className="btn border-0 bg-[#a5e5ff] border-[#075066] text-[#075066] px-10 hover:bg-[#175e91] hover:text-[#fbfeff]"> Get my resume</button>
+          <a href="/resume.pdf" download="My_Resume_jean_Dieudonne.pdf">
+            <button className="btn border-0 bg-[#a5e5ff] border-[#075066] text-[#075066] px-10 hover:bg-[#175e91] hover:text-[#fbfeff]">
+              Get my resume
+            </button>
+          </a>
         </div>
       </div>
   </div>

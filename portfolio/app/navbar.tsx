@@ -49,7 +49,7 @@ export default function Navbar() {
               duration={500}
               offset={-70}
               className={`${
-                activeLink === name ? 'bg-[#0C5769]' : ''
+                activeLink === name ? '' : ''
               } text-white font-semibold hover:text-[#23a6c7] text-sm cursor-pointer rounded-full px-4 py-2 transition-colors duration-700`}
               onClick={() => setActiveLink(name)}
               aria-current={activeLink === name ? 'page' : undefined}
