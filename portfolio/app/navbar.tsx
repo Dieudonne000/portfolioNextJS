@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import Toggler from './toggler';
 import { RiMenu2Line } from 'react-icons/ri';
-
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('Home'); // Match correct section name
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage mobile menu visibility

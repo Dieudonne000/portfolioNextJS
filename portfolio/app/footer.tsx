@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 import { FaInstagramSquare, FaLinkedin} from "react-icons/fa";
 import { FaGithub } from 'react-icons/fa6';
@@ -6,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer bg-slate-100 dark:bg-[#022631] text-[#0C5769] dark:text-white p-3">
   <aside className="grid-flow-col items-center">
-    <img src="/Group 1 (1).svg" alt="logo" className='size-9' />
+    <Image src="/Group 1 (1).svg" alt="logo" className='size-9' />
     <p className='font-light ftText'>
        MUNEZA Jean Dieudonné
       <br />

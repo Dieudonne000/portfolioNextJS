@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/no-unescaped-entities */
 'use client';
 import React from 'react';
 import {ReactTyped} from 'react-typed';
@@ -30,7 +28,7 @@ const Hero = () => {
       <div className="hero-content text-center">
         <div className="max-w-max">
           <h1 className="text-2xl md::text-6xl sm:text-8xl font-bold transition-all duration-700 text-[#01566F] dark:text-[#fff]">
-            Hi. I’m Dieudonne.<br />
+            Hi. I&apos;m Dieudonne.<br />
             <ReactTyped
               className="text-[#31b0ff]"
               strings={['A Web Developer', 'A 3D Designer', 'A Programmer', 'A Student']}
@@ -39,7 +37,7 @@ const Hero = () => {
               loop // Loops the typing animation
             />
           </h1>
-          <p className="py-6 text-xl text-[#01566F] dark:text-[#fff] wel">Let’s Build Something Amazing Together</p>
+          <p className="py-6 text-xl text-[#01566F] dark:text-[#fff] wel">Let&apos;s Build Something Amazing Together</p>
         </div>
       </div>
     </div>
