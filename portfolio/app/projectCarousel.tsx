@@ -41,11 +41,11 @@ const projects = [
 ];
 
 const ProjectsCarousel = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
   const [showModal, setShowModal] = useState(false);
   const [showNotReadyModal, setShowNotReadyModal] = useState(false);
 
-  const handleButtonClick = (project) => {
+  const handleButtonClick = (project: typeof projects[0]) => {
     if (!project.isReady) {
       setShowNotReadyModal(true);
     } else {

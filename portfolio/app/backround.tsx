@@ -1,10 +1,11 @@
 "use client";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
+import { Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 
 const ParticlesBackground = () => {
-  const particlesInit = useCallback(async (engine) => {
+  const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine);
   }, []);
 

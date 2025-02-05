@@ -5,23 +5,25 @@ import { FaCheckCircle } from "react-icons/fa";
 import { RxCrossCircled } from "react-icons/rx";
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState("idle"); // idle | loading | success | error
 
-  const sendEmail = async (e) => {
+  const sendEmail = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setStatus("loading");
 
     try {
-      await emailjs.sendForm(
-        "service_c3k2yj5",  // Replace with your EmailJS Service ID
-        "template_kstad49", // Replace with your EmailJS Template ID
-        formRef.current,
-        "eI3JsvHRUSroB4P7P" // Replace with your EmailJS Public Key
-      );
+      if (formRef.current) {
+        await emailjs.sendForm(
+          "service_c3k2yj5",  // Replace with your EmailJS Service ID
+          "template_kstad49", // Replace with your EmailJS Template ID
+          formRef.current,
+          "eI3JsvHRUSroB4P7P" // Replace with your EmailJS Public Key
+        );
+      }
 
       setStatus("success");
-      formRef.current.reset();
+      formRef.current?.reset();
 
     } catch (error) {
       console.error(error);
