@@ -40,7 +40,7 @@ export default function Navbar() {
 
   return (
     <div className="min-h-[3rem] navbar backdrop-blur-sm z-10 bg-[#083344]/70 rounded-full px-1 w-fit mx-auto mt-2 fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center justify-between min-w-[20rem]">
-      <ul className="flex px-1 gap-1 hidden md:flex">
+      <ul className="flex px-1 gap-1 md:flex">
         {sections.map(({ name, id }) => (
           <li key={id}>
             <ScrollLink

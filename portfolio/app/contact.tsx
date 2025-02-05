@@ -53,7 +53,7 @@ const Contact = () => {
               <form ref={formRef} onSubmit={sendEmail} className="card-body">
                 <div className="text-[#183037] dark:text-white">
                   <h2 className='text-2xl font-bold mb-5'>I'm always open</h2>
-                  <p className='text-sm mb-4'>Feel free to reach out—drop a message, and I’ll get back to you as soon as possible!</p>
+                  <p className='text-sm mb-4'>Feel free to reach out—drop a message, and I&apos;ll get back to you as soon as possible!</p>
                 </div>
                 <div className="form-control">
                   <input type="text" name="from_name" placeholder="Fullnames*" className="input input-bordered bg-[#bedce6] dark:bg-[#031e27] focus:outline-[#01566F]" required />
