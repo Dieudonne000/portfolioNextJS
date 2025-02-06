@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react";
-import { FaReact, FaNodeJs, FaDatabase,FaHeart, FaMobileAlt } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDatabase, FaMobileAlt } from "react-icons/fa";
 import { FaHtml5, FaJs, FaPhp } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiExpress, SiMongodb, SiFirebase, SiPython,SiCplusplus, SiBlender } from "react-icons/si";
 import { CiMobile1 } from "react-icons/ci";

@@ -6,7 +6,6 @@ import Project from "./project";
 import Experience from "./experience";
 import Contact from "./contact";
 import Scroll from "./scroll";
-import { Suspense } from "react";
 
 
 export default function Home() {
