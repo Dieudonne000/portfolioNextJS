@@ -6,10 +6,13 @@ import Project from "./project";
 import Experience from "./experience";
 import Contact from "./contact";
 import Scroll from "./scroll";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 
 export default function Home() {
   return (
+    <Suspense fallback={<Loading />}>
     <main className="pt-20">
         <section id="hero">
           <Hero />
@@ -41,5 +44,6 @@ export default function Home() {
           <Footer />
         </footer>
       </main>
+      </Suspense>
   );
 }
