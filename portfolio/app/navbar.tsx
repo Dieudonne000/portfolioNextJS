@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import Toggler from './toggler';
 import { RiMenu2Line } from 'react-icons/ri';
+
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('Home'); // Match correct section name
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage mobile menu visibility
@@ -39,7 +40,9 @@ export default function Navbar() {
 
   return (
     <div className="min-h-[3rem] navbar backdrop-blur-sm z-10 bg-[#083344]/70 rounded-full px-1 w-fit mx-auto mt-2 fixed top-0 left-1/2 transform -translate-x-1/2 flex items-center justify-between min-w-[20rem]">
-      <ul className="flex px-1 gap-1 md:flex">
+      
+      {/* Main Navigation - Hidden on Small Screens */}
+      <ul className="hidden md:flex px-1 gap-1">
         {sections.map(({ name, id }) => (
           <li key={id}>
             <ScrollLink
@@ -47,9 +50,7 @@ export default function Navbar() {
               smooth={true}
               duration={500}
               offset={-70}
-              className={`${
-                activeLink === name ? '' : ''
-              } text-white font-semibold hover:text-[#23a6c7] text-sm cursor-pointer rounded-full px-4 py-2 transition-colors duration-700`}
+              className={`text-white font-semibold hover:text-[#23a6c7] text-sm cursor-pointer rounded-full px-4 py-2 transition-colors duration-700`}
               onClick={() => setActiveLink(name)}
               aria-current={activeLink === name ? 'page' : undefined}
             >
@@ -60,44 +61,41 @@ export default function Navbar() {
       </ul>
 
       {/* Hamburger menu icon for mobile */}
-      <div className="md:hidden flex flex-row items-center px-5">
+      <div className="md:hidden flex items-center px-5">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-white focus:outline-none"
+          aria-label="Toggle Menu"
         >
-          <RiMenu2Line /> 
+          <RiMenu2Line />
         </button>
       </div>
 
-      {/* Mobile menu */}
-      <div
-        className={`${
-          isMenuOpen ? 'block' : 'hidden'
-        } absolute top-16 left-1/2 transform -translate-x-1/2 w-full bg-[#083344]/90 md:hidden rounded-lg shadow-lg`}
-      >
-        <ul className="flex flex-col items-center gap-2 py-4">
-          {sections.map(({ name, id }) => (
-            <li key={id}>
-              <ScrollLink
-                to={id}
-                smooth={true}
-                duration={500}
-                offset={-70}
-                className={`${
-                  activeLink === name ? 'bg-[#0C5769]' : ''
-                } text-white font-semibold hover:text-[#23a6c7] text-sm cursor-pointer rounded-full px-4 py-2 transition-colors duration-700`}
-                onClick={() => {
-                  setActiveLink(name);
-                  setIsMenuOpen(false); // Close menu after click
-                }}
-                aria-current={activeLink === name ? 'page' : undefined}
-              >
-                {name}
-              </ScrollLink>
-            </li>
-          ))}
-        </ul>
-      </div>
+      {/* Mobile Menu - Only Visible When isMenuOpen is true */}
+      {isMenuOpen && (
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-full bg-[#083344]/90 md:hidden rounded-lg shadow-lg">
+          <ul className="flex flex-col items-center gap-2 py-4 text-center">
+            {sections.map(({ name, id }) => (
+              <li key={id} className='text-center'>
+                <ScrollLink
+                  to={id}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  className={`text-white font-semibold hover:text-[#23a6c7] text-sm cursor-pointer rounded-full px-4 py-2 transition-colors duration-700 text-center`}
+                  onClick={() => {
+                    setActiveLink(name);
+                    setIsMenuOpen(false); // Close menu after clicking
+                  }}
+                  aria-current={activeLink === name ? 'page' : undefined}
+                >
+                  {name}
+                </ScrollLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <span className="mx-3">
         <Toggler />

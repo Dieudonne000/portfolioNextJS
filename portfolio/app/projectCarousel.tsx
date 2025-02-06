@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: "3D project: Jeep",
-    image: "/jeep.png",
+    image: "/Jeep.png",
     description:
       "One of my favourite 3D creations in Blender. Completely modeled in Blender, took inspiration from Bruno Simon.",
     link: "/jeep.zip", // File download

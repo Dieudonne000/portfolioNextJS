@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "./navbar";
 import { Suspense } from "react";
 import Loading from "./loading";
-import Background from "./backround";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +34,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Suspense fallback={<Loading />}>
-          <Background />
           <Navbar />
           {children}
         </Suspense>
