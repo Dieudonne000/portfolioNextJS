@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react";
-import { FaReact, FaNodeJs, FaDatabase, FaMobileAlt } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDatabase,FaHeart, FaMobileAlt } from "react-icons/fa";
 import { FaHtml5, FaJs, FaPhp } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiExpress, SiMongodb, SiFirebase, SiPython,SiCplusplus, SiBlender } from "react-icons/si";
 import { CiMobile1 } from "react-icons/ci";
@@ -18,7 +18,7 @@ const TechStack = () => {
                   <p className=" text-[#01566F] dark:text-white">React</p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <SiNextdotjs className="text-white text-4xl" />
+                  <SiNextdotjs className="text-gray-900 dark:text-white text-4xl" />
                   <p className=" text-[#01566F] dark:text-white">Next.js</p>
                 </div>
                 <div className="flex flex-col items-center">

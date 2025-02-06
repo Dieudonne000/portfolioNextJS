@@ -56,7 +56,7 @@ const Contact = () => {
                   <p className='text-sm mb-4'>Feel free to reach out—drop a message, and I&apos;ll get back to you as soon as possible!</p>
                 </div>
                 <div className="form-control">
-                  <input type="text" name="from_name" placeholder="Fullnames*" className="input input-bordered bg-[#bedce6] dark:bg-[#031e27] focus:outline-[#01566F]" required />
+                  <input type="text" name="user_name" placeholder="Fullnames*" className="input input-bordered bg-[#bedce6] dark:bg-[#031e27] focus:outline-[#01566F]" required />
                 </div>
                 <div className="form-control">
                   <input type="email" name="user_email" placeholder="Email*" className="input input-bordered bg-[#bedce6] dark:bg-[#031e27] focus:outline-[#01566F]" required />
